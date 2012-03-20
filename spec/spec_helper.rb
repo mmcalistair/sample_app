@@ -79,4 +79,8 @@ RSpec.configure do |config|
   # rspec-rails.
   config.infer_base_class_for_anonymous_controllers = false
   ActiveSupport::Dependencies.clear
+  
+  def test_sign_in(user)
+    controller.sign_in(user)
+  end
 end
